@@ -1,0 +1,304 @@
+
+.inicio {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F7F3FC;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+
+.inicio h1 {
+    color: #7952AC;
+}
+
+.subtitulo {
+    color: #7952AC;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.usuarios,
+.conductores,
+.beneficios {
+    margin: 40px 0;
+}
+
+.usuarios h2,
+.conductores h2,
+.beneficios h2 {
+    color: #7952AC;
+    text-align: center;
+}
+
+.descripcion {
+    text-align: center;
+    color: #62596D;
+    margin-bottom: 25px;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.usuario,
+.beneficio {
+    background-color: #F7F3FC;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #E5D8F5;
+}
+
+.usuario h3,
+.beneficio h3 {
+    color: #7952AC;
+}
+
+.tabla {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.tabla table {
+    width: 100%;
+    min-width: 550px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla caption {
+    padding: 12px;
+    color: #7952AC;
+    font-weight: bold;
+}
+
+.tabla th,
+.tabla td {
+    border: 1px solid #E5D8F5;
+    padding: 14px;
+    text-align: left;
+}
+
+.tabla th {
+    background-color: #7952AC;
+    color: white;
+}
+
+.tabla tbody tr:nth-child(even) {
+    background-color: #F7F3FC;
+}
+
+.tabla tbody tr:hover {
+    background-color: #EEE4FA;
+}
+
+.nav {
+    background-color: #7952AC;
+    padding: 18px;
+}
+
+.nav nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #E5D8F5;
+}
+
+.pie-pagina {
+    background-color: #7952AC;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+.tarifas,
+.servicios,
+.galeria,
+.multimedia,
+.audio,
+.formulario {
+    margin: 40px 0;
+}
+
+.servicio {
+    background-color: #F7F3FC;
+    border: 1px solid #E5D8F5;
+    border-radius: 15px;
+    padding: 24px;
+    width: 280px;
+    box-sizing: border-box;
+}
+
+.servicio h3 {
+    color: #7952AC;
+}
+
+.boton-secundario {
+    display: inline-block;
+    background-color: #E8DDF7;
+    color: #684494;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton-secundario:hover {
+    background-color: #DCC8F5;
+}
+
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.galeria-imagenes figure {
+    margin: 0;
+    background-color: #F7F3FC;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.galeria-imagenes img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.galeria-imagenes figcaption {
+    padding: 14px;
+    color: #7952AC;
+    font-weight: bold;
+    text-align: center;
+}
+
+.video {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background-color: #EEE4FA;
+}
+
+.audio audio {
+    width: 100%;
+    max-width: 500px;
+}
+
+.formulario {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8F5;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.formulario h2 {
+    color: #7952AC;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin: 18px 0;
+}
+
+.campo label,
+.formulario legend {
+    color: #493B59;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CDB9E7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: 2px solid #A88ACF;
+    border-color: #7952AC;
+}
+
+.formulario fieldset {
+    border: 1px solid #DCC8F5;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 22px 0;
+}
+
+.formulario fieldset label {
+    display: block;
+    margin: 12px 0;
+}
+
+.formulario input[type="radio"],
+.formulario input[type="checkbox"] {
+    accent-color: #7952AC;
+}
+
+.botones-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.boton-registro,
+.boton-limpiar {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 9px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-registro {
+    background-color: #7952AC;
+    color: white;
+}
+
+.boton-registro:hover {
+    background-color: #5E3B8A;
+}
+
+.boton-limpiar {
+    background-color: #E8DDF7;
+    color: #684494;
+}
+
+.boton-limpiar:hover {
+    background-color: #DCC8F5;
+}
