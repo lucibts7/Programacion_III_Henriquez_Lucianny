@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de vehículos - Estacionamiento Digital</title>
+</head>
+<body>
+    <header>
+        <h1>Estacionamiento Digital</h1>
+        <p>Registro y control de vehículos</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#" method="get" id="registro-estacionamiento">
+            <h1>Autor: Lucianny Henriquez</h1>
+            <fieldset>
+                <legend>Información del vehículo</legend>
+                <label for="codigo">Código de registro:</label>
+                <input type="text" id="codigo" name="codigo"
+                    placeholder="EST-001" maxlength="10" required>
+                <br><br>
+                <label for="placa">Placa del vehículo:</label>
+                <input type="text" id="placa" name="placa"
+                    placeholder="Ej. PBA-1234" required>
+                <br><br>
+                <label for="propietario">Propietario:</label>
+                <input type="text" id="propietario" name="propietario"
+                    placeholder="Nombre completo" required>
+                <br><br>
+                <label for="tipo">Tipo de vehículo:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Seleccione un tipo</option>
+                    <option value="automovil">Automóvil</option>
+                    <option value="motocicleta">Motocicleta</option>
+                    <option value="camioneta">Camioneta</option>
+                </select>
+                <br><br>
+                <label for="fecha">Fecha de ingreso:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <br><br>
+                <label for="hora">Hora de entrada:</label>
+                <input type="time" id="hora" name="hora" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Detalles del estacionamiento</legend>
+                <p>Prioridad de atención:</p>
+                <input type="radio" id="normal" name="prioridad"
+                    value="normal" required>
+                <label for="normal">Normal</label>
+                <input type="radio" id="preferencial" name="prioridad"
+                    value="preferencial">
+                <label for="preferencial">Preferencial</label>
+                <br><br>
+                <label for="espacio">Número de espacio:</label>
+                <input type="number" id="espacio" name="espacio"
+                    min="1" max="100" value="1">
+                <p>Servicios utilizados:</p>
+                <input type="checkbox" id="cubierto" name="servicios"
+                    value="cubierto">
+                <label for="cubierto">Espacio cubierto</label>
+                <br>
+                <input type="checkbox" id="seguridad" name="servicios"
+                    value="seguridad">
+                <label for="seguridad">Servicio de seguridad</label>
+                <br>
+                <input type="checkbox" id="mensual" name="servicios"
+                    value="mensual">
+                <label for="mensual">Plan mensual</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Observaciones</legend>
+                <label for="descripcion">
+                    Información adicional:
+                </label>
+                <br>
+                <textarea id="descripcion" name="descripcion"
+                    rows="5" cols="45" maxlength="500"
+                    placeholder="Escriba alguna observación..."></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Registrar vehículo</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p><small>Estacionamiento Digital - 2026</small></p>
+        <p>Control y organización de espacios</p>
+    </footer>
+</body>
+</html>

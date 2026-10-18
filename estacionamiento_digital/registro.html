@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Estacionamiento Digital</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="nav">
+        <nav>
+            <a href="index.html">Información Principal</a>
+            <br><br>
+            <a href="usuarios.html">Información Usuarios</a>
+            <br><br>
+            <a href="tarifas.html">Información Tarifas</a>
+            <br><br>
+            <a href="multimedia.html">Instalaciones</a>
+            <br><br>
+            <a href="registro.html">Registro Vehículo</a>
+        </nav>
+    </header>
+    <main>
+        <header class="inicio">
+            <h1>Registra tu vehículo</h1>
+            <p>
+                Completa los datos para conocer
+                cómo sería el proceso de registro.
+            </p>
+        </header>
+        <section class="formulario">
+            <h2>Datos personales</h2>
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"
+                        placeholder="Escribe tu nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido"
+                        placeholder="Escribe tu apellido" required>
+                </div>
+                <div class="campo">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena"
+                        required>
+                </div>
+                <div class="campo">
+                    <label for="confirmacion">Confirmar contraseña:</label>
+                    <input type="password" id="confirmacion"
+                        name="confirmacion" required>
+                </div>
+                <div class="campo">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad"
+                        min="18" max="120" required>
+                </div>                            
+                <div class="campo">
+                    <label for="tipo-vehiculo">Tipo de vehículo:</label>
+                    <select id="tipo-vehiculo" name="tipo-vehiculo" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="automovil">Automóvil</option>
+                        <option value="motocicleta">Motocicleta</option>
+                        <option value="camioneta">Camioneta</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Tipo de usuario</legend>
+                    <label>
+                        <input type="radio" name="rol" value="cliente" checked>
+                        Cliente
+                    </label>
+                    <label>
+                        <input type="radio" name="rol" value="administrador">
+                        Administrador
+                    </label>
+                </fieldset>                            
+                <fieldset>
+                    <legend>Datos del vehículo</legend>
+                    <div class="campo">
+                        <label for="placa">Placa:</label>
+                        <input type="text" id="placa" name="placa"
+                            placeholder="Ej. PBA-1234" required>
+                    </div>
+                    <div class="campo">
+                        <label for="color">Color:</label>
+                        <input type="text" id="color" name="color"
+                            placeholder="Ej. Blanco" required>
+                    </div>
+                    <div class="campo">
+                        <label for="marca">Marca o modelo:</label>
+                        <input type="text" id="marca" name="marca"
+                            placeholder="Ej. Chevrolet Sail" required>
+                    </div>
+                </fieldset>                
+                <fieldset>
+                    <legend>Servicios de interés</legend>
+                    <p>¿Qué opciones te gustaría conocer?</p>
+                    <label>
+                        <input type="checkbox" name="servicios" value="mensual">
+                        Plan mensual
+                    </label>
+                    <label>
+                        <input type="checkbox" name="servicios" value="reservas">
+                        Reservas
+                    </label>
+                    <label>
+                        <input type="checkbox" name="servicios" value="notificaciones">
+                        Notificaciones
+                    </label>
+                </fieldset>                  
+                <div class="botones-formulario">
+                    <button type="submit" class="boton-registro">
+                        Registrar usuario
+                    </button>
+                    <button type="reset" class="boton-limpiar">
+                        Limpiar formulario
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="pie-pagina">
+        <p>Estacionamiento Digital - 2026</p>
+        <p>By Lucianny Henriquez</p>
+    </footer>
+</body>
+</html>

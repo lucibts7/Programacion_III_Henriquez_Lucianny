@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - Estacionamiento Digital</title>
+</head>
+<body>
+    <h1>Autor: Lucianny Henriquez</h1>
+    <h2>Registro de Usuarios - Estacionamiento Digital</h2>
+    
+    <form action="/registro" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Luci" minlength="3" maxlength="40" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido" minlength="2" maxlength="40" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" minlength="6" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="confirm_password">Confirmar Password:</label><br>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" name="edad" min="16" max="100" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="vehiculo">Tipo de Vehículo:</label><br>
+                    <select id="vehiculo" name="vehiculo" required>
+                        <option value="">Seleccione un vehículo</option>
+                        <option value="automovil">Automóvil</option>
+                        <option value="motocicleta">Motocicleta</option>
+                        <option value="camioneta">Camioneta</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Tipo de Usuario:</p>
+                    <input type="radio" id="cliente" name="tipo_usuario" value="cliente" required>
+                    <label for="cliente">Cliente</label><br>
+                    
+                    <input type="radio" id="administrador" name="tipo_usuario" value="administrador">
+                    <label for="administrador">Administrador</label>
+                </td>
+                <td>
+                    <p>Servicios de interés:</p>
+                    <input type="checkbox" id="reservas" name="servicios[]" value="reservas">
+                    <label for="reservas">Reservas de espacios</label><br>
+                    
+                    <input type="checkbox" id="mensualidad" name="servicios[]" value="mensualidad">
+                    <label for="mensualidad">Plan Mensual</label><br>
+                    
+                    <input type="checkbox" id="notificaciones" name="servicios[]" value="notificaciones">
+                    <label for="notificaciones">Notificaciones</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Datos del vehículo</legend>
+                        <label for="placa">Placa:</label><br>
+                        <input type="text" id="placa" name="placa" placeholder="Ej. PBA-1234" required><br><br>
+                        
+                        <label for="color">Color:</label><br>
+                        <input type="text" id="color" name="color"><br><br>
+                        
+                        <label for="modelo">Modelo:</label><br>
+                        <input type="text" id="modelo" name="modelo">
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button type="submit">Registrar Usuario</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>
