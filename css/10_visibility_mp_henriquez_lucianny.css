@@ -1,0 +1,70 @@
+
+.oculta {
+    visibility: hidden;
+}
+
+.personal {
+    position: relative;
+    background-color: #7952AC;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.admin2 {
+    position: relative;
+    top: 15px;
+    left: 30px;
+    background-color: #15803d;
+}
+
+.tarjeta-relativa {
+    position: relative;
+    width: 300px;
+    padding: 30px;
+    border: 2px solid #7952AC;
+    background-color: #F7F3FC;
+    color: #37313F;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #DC2626;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.boton-fijo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 8px;
+    background-color: #7952AC;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px;
+    background-color: #E5D8F5;
+}
+
+nav a {
+    color: #7952AC;
+    margin-right: 20px;
+}
+
+section {
+    min-height: 450px;
+    padding: 30px;
+    border-bottom: 1px solid #DCC8F5;
+}

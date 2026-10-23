@@ -1,0 +1,96 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F7F3FC;
+    color: #37313F;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    color: #7952AC;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.cartel {
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 3px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.cartel h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.cartel h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.descripcion {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.frase {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.firma {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.uno {
+    background-color: #F7F3FC;
+    border-color: #7952AC;
+}
+
+.uno h2 {
+    color: #7952AC;
+    text-shadow: 2px 2px 5px #DCC8F5;
+}
+
+.dos {
+    background-color: #FFF1F2;
+    border-color: #DC2626;
+}
+
+.dos h2 {
+    color: #B91C1C;
+    text-shadow: 2px 2px 5px #FECACA;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #E5D8F5;
+}
