@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F3FC;
+    color: #37313F;
+}
+
+.menu {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background-color: #E5D8F5;
+}
+
+.estacionamiento {
+    padding: 20px;
+    background-color: #F7F3FC;
+    border: 2px solid #7952AC;
+}
+
+.plazas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    color: #37313F;
+    background-color: #E5D8F5;
+}
+
+.operaciones {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    color: #37313F;
+    background-color: #E5D8F5;
+}
+
+.operacion {
+    padding: 30px;
+    background-color: #DCC8F5;
+    border: 2px solid #7952AC;
+    text-align: center;
+}
+
+.zonas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 130px 90px;
+    gap: 10px;
+    padding: 20px;
+    color: #37313F;
+    background-color: #E5D8F5;
+}
+
+.zonas div {
+    padding: 30px;
+    background-color: #DCC8F5;
+    border: 2px solid #7952AC;
+    text-align: center;
+}
+
+.vehiculos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 30px;
+    color: #37313F;
+    background-color: #E5D8F5;
+}
+
+.vehiculos div {
+    padding: 30px;
+    background-color: #DCC8F5;
+    border: 2px solid #7952AC;
+    text-align: center;
+}
+
+.plazas2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    color: #37313F;
+    background-color: #E5D8F5;
+}
+
+.vehiculos2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    color: #37313F;
+    background-color: #E5D8F5;
+}
+
+.vehiculos2 div {
+    padding: 30px;
+    background-color: #F7F3FC;
+    border: 2px solid #7952AC;
+    text-align: center;
+}
+
+.espacios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    color: #37313F;
+    background-color: #E5D8F5;
+}
+
+.espacios div {
+    padding: 30px;
+    background-color: #F7F3FC;
+    border: 2px solid #7952AC;
+    text-align: center;
+}
+
+.destacada {
+    grid-column: span 2;
+    padding: 30px;
+    background-color: #DCC8F5 !important;
+    border: 2px solid #7952AC;
+    text-align: center;
+}
+
+.mision-principal {
+    grid-row: span 2;
+    padding: 30px;
+    background-color: #DCC8F5 !important;
+    border: 2px solid #7952AC;
+    text-align: center;
+}
