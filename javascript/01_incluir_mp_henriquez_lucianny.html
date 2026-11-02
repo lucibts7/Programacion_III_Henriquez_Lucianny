@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a JavaScript - Estacionamiento Digital</title>
+    <script> 
+        alert('¡Bienvenido al Estacionamiento Digital!');
+        console.log('Bienvenido al Sistema de Estacionamiento');    
+    </script>
+</head>
+<body>
+    <h1>Javascript en Estacionamiento Digital</h1>
+    <h2>Modo Inline</h2>
+    <button onclick="alert('Tu espacio seguro te espera!')">
+        Mostrar Mensaje
+    </button>
+    <input type="text" oninput="console.log(this.value)"
+    placeholder="Escribe la placa de tu vehículo...">
+    <input type="text"
+    onchange="console.log('Placa ingresada:' + this.value)" placeholder="Escribe y haz clic fuera">
+    <input type="text"
+            onfocus="console.log('Estás ingresando los datos de tu vehículo...')"
+            onblur="alert('Has salido del campo de registro')"
+            placeholder="Haz clic dentro y fuera...">
+    <script src="01_incluir_mp_henriquez_lucianny.js"></script>        
+</body>
+</html>

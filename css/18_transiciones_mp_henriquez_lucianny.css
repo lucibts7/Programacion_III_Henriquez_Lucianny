@@ -1,0 +1,176 @@
+body {
+    background-color: #F7F3FC;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #7952AC;
+}
+
+.boton-consulta {
+    padding: 15px 25px;
+    background-color: #7952AC;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.boton-consulta:hover {
+    background-color: #16A34A;
+}
+
+.boton-consulta:focus-visible {
+    background-color: #16A34A;
+    outline: 3px solid #B69AD9;
+    outline-offset: 4px;
+}
+
+.autos {
+    width: 250px;
+    padding: 25px;
+    background-color: #DCC8F5;
+    color: #333333;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 3s ease;
+    transition-duration: 3s ease;
+    transition-property: background-color, transform;
+}
+
+.autos:hover {
+    background-color: #16A34A;
+    transform: scale(1.05);
+}
+
+.zona {
+    padding: 30px;
+    background-color: #E9DDF7;
+}
+
+.vehiculo {
+    width: 100px;
+    padding: 20px;
+    background-color: #7952AC;
+    transition: transform 0.5s ease;
+}
+
+.vehiculo:hover {
+    transform: translate(50px, -10px);
+}
+
+.radar {
+    padding: 30px;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #E9DDF7;
+    border: 3px solid #7952AC;
+    border-radius: 50%;
+}
+
+.indicador {
+    color: #7952AC;
+    font-size: 70px;
+    transition: transform 1s ease;
+}
+
+.indicador:hover {
+    transform: rotate(360deg);
+}
+
+.zona2 {
+    padding: 30px;
+    background-color: #E9DDF7;
+}
+
+.vehiculo2 {
+    width: 100px;
+    padding: 20px;
+    background-color: #7952AC;
+    transition: transform 0.5s ease;
+}
+
+.vehiculo2:hover {
+    transform: translateX(50px) rotate(15deg) scale(4);
+}
+
+.vehiculo {
+    width: 100px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #E9DDF7;
+    overflow: hidden;
+}
+
+.opcion {
+    width: 100px;
+    background-color: #7952AC;
+    text-align: center;
+    animation-name: vuelo;
+    animation-duration: 3s;
+}
+
+@keyframes vuelo {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+.vehiculo2 {
+    width: 100px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #E9DDF7;
+    overflow: hidden;
+}
+
+.opcion2 {
+    width: 100px;
+    background-color: #7952AC;
+    text-align: center;
+    animation-name: vuelo2;
+    animation-duration: 3s;
+}
+
+@keyframes vuelo2 {
+    from {
+        transform: translateX(30px);
+    }
+    to {
+        transform: translateX(280px);
+    }
+}
+
+.alerta {
+    width: 220px;
+    padding: 20px;
+    background-color: #7952AC;
+    text-align: center;
+    animation-name: advertencia;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes advertencia {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
